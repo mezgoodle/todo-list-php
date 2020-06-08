@@ -14,14 +14,15 @@
         <input type="text" class="form-control" name="task" id="task" placeholder="Need to do..">
         <button type="submit" name="sendTask" class="btn btn-success">Send task</button>
     </form>
+    <br>
 
     <?php 
         require_once('./db.php');
 
-        echo '<ul>';
+        echo '<ul class="list-group list-group-flush">';
         $query = $pdo->query('SELECT * FROM `tasks` ORDER BY `id` DESC');
         while ($row = $query->fetch(PDO::FETCH_OBJ)) {
-            echo '<li><b>'.$row->task.'</b></li>';
+            echo '<li class="list-group-item list-group-item-action"><b>'.$row->task.'</b><a href="/delete.php?id='.$row->id.'"><button type="button" class="btn btn-danger">Delete</button></a></li>';
         }
         echo '</ul>';
     ?>

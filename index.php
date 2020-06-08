@@ -17,6 +17,13 @@
 
     <?php 
         require_once('./db.php');
+
+        echo '<ul>';
+        $query = $pdo->query('SELECT * FROM `tasks`');
+        while ($row = $query->fetch(PDO::FETCH_OBJ)) {
+            echo '<li><b>'.$row->task.'</b></li>';
+        }
+        echo '</ul>';
     ?>
 </div>
 </body>

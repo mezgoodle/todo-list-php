@@ -6,8 +6,7 @@
             exit();
         }
 
-        $dsn = 'mysql:host=localhost;dbname=todo-list';
-        $pdo = new PDO($dsn, 'root', '');
+        require_once('./db.php');
 
         $sql = 'INSERT INTO tasks(task) VALUES(:task)';
         $query = $pdo->prepare($sql);

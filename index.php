@@ -14,6 +14,10 @@
         <input type="text" class="form-control" name="task" id="task" placeholder="Need to do..">
         <button type="submit" name="sendTask" class="btn btn-success">Send task</button>
     </form>
+
+    <?php 
+        require_once('./db.php');
+    ?>
 </div>
 </body>
 </html>

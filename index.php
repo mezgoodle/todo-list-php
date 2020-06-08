@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-    <h1>List</h1>
+<div class="container">
+    <h1>TODO list</h1>
+    <form action="/add.php" method="post">
+        <input type="text" class="form-control" name="task" id="task" placeholder="Need to do..">
+        <button type="submit" name="sendTask" class="btn btn-success">Send task</button>
+    </form>
+</div>
 </body>
 </html>

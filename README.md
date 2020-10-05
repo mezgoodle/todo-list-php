@@ -6,4 +6,4 @@ Hi! This is the repository, where i learnt [PHP](https://www.php.net/) [PDO](htt
 
 ## Credits
 
- - https://www.youtube.com/watch?v=VJ-VD4lyu_4&list=PL0lO_mIqDDFXm69bqj5JTCS1XGTNkhTch&index=47&t=0s
+ - [Tutorial on YouTube](https://www.youtube.com/watch?v=VJ-VD4lyu_4&list=PL0lO_mIqDDFXm69bqj5JTCS1XGTNkhTch&index=47&t=0s)
